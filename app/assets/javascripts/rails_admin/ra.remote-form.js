@@ -20,7 +20,7 @@
       var edit_url = dom_widget.find('select').data('edit-url');
       if(typeof(edit_url) != 'undefined' && edit_url.length) {
         dom_widget.find('.ra-multiselect option').live('dblclick', function(e){
-          widget._bindModalOpening(e, edit_url.replace('__ID__', this.value))
+          location.href = edit_url.replace('__ID__', this.value)
         });
       }
 
